@@ -127,7 +127,7 @@ function App() {
       mounted = false;
       listener?.subscription?.unsubscribe();
     };
-  }, [notify]);
+  }, [demoEnabled, notify]);
 
   const login = async (credentials) => {
     try {
